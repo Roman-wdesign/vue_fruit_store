@@ -8,7 +8,9 @@ import mutations from './mutations/mutations';
 Vue.use(Vuex);
 
 let store= new Vuex.Store({
-  state:{},
+  state:{
+    products:[],
+  },
   mutations,
 
   actions,
