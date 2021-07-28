@@ -10,6 +10,9 @@ Vue.use(Vuex);
 let store= new Vuex.Store({
   state:{
     products:[],
+    product_url:String,
+    price:String,
+    photo_url:String
   },
   mutations,
 

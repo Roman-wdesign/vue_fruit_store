@@ -6,6 +6,7 @@ export default {
         const urlMain = "https://api.predic8.de/shop/products/";
         return axios(urlMain, {
             method: "GET",
+            timeout: 1000,
         })
             .then((response) => {
                 commit("SET_PRODUCTS_TO_STATE", response.data.products);

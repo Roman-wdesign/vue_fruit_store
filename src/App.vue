@@ -1,18 +1,23 @@
 <template>
   <v-app>
-    <router-link to="/main">Home page</router-link>
-    <router-link to="/catalog">Catalog</router-link>
+    <store-header/>
+    <store-catalog/>
+    <store-footer/>
     <v-main>
-      <router-view/>
+
     </v-main>
   </v-app>
 </template>
 
 <script>
 
+import StoreCatalog from "@/components/storeCatalog";
+import StoreHeader from "@/components/storeHeader";
+import StoreFooter from "@/components/storeFooter";
+
 export default {
   name: 'App',
-  components: {},
+  components: {StoreFooter, StoreHeader, StoreCatalog},
   data: () => ({
     //
   }),

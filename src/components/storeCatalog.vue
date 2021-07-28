@@ -1,12 +1,21 @@
 <template>
 <div class="catalog">
   <h2>Catalog page</h2>
-  <StoreCatalogItem
-      v-for="(item, id) in PRODUCTS"
-      :key="id"
-      :name="item.name"
-      :fruit_data="item"
-  />
+  <div class="catalog__container_currency">
+    <StoreCatalogItem
+        v-for="(item, id) in PRODUCTS"
+        :key="id"
+        :name="item.name"
+        :product_url="item.product_url"
+        :fruit_data="item"
+    />
+  </div>
+  <div class="text-center">
+    <v-pagination
+        v-model="page"
+        :length="9"
+    ></v-pagination>
+  </div>
 </div>
 </template>
 
@@ -21,7 +30,9 @@ export default {
 
   components: {StoreCatalogItem},
 
-  data: () => ({}),
+  data: () => ({
+    page:99
+  }),
 
   computed:{
     ...mapGetters(["PRODUCTS"])
