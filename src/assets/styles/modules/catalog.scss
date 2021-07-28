@@ -1,12 +1,16 @@
 .catalog{
   margin-top: 3.5rem;
-}
-.catalog__container_currency {
+&__container_currency {
   margin-top: 1rem;
   display: grid;
   grid-template-columns: repeat( auto-fill, minmax(17rem, 1fr));
   //grid-template-rows: repeat(1, 15rem);
   gap: 1rem;
   flex-wrap: wrap;
-
 }
+  &__text-h2{
+font-size: $h2_size;
+  }
+}
+
+

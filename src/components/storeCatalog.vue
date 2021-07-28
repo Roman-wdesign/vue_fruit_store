@@ -1,45 +1,40 @@
 <template>
-<div class="catalog">
-  <h2>Catalog page</h2>
-  <v-carousel v-model="model">
-    <v-carousel-item
-        v-for="(color, i) in colors"
-        :key="color"
+  <div class="catalog">
+    <h2>Catalog page</h2>
+    <v-carousel v-model="model"
+                cycle
+                hide-delimiter-background
+                show-arrows-on-hover
     >
-      <v-sheet
-          :color="color"
-          height="100%"
-          tile
-      >
-        <v-row
-            class="fill-height"
-            align="center"
-            justify="center"
-        >
-          <div class="text-h2">
-            Slide {{ i + 1 }}
-          </div>
-        </v-row>
-      </v-sheet>
-    </v-carousel-item>
-  </v-carousel>
-  <div class="catalog__container_currency">
+      <v-carousel-item
 
-    <StoreCatalogItem
-        v-for="(item, id) in PRODUCTS"
-        :key="id"
-        :name="item.name"
-        :product_url="item.product_url"
-        :fruit_data="item"
-    />
+          v-for="(image, i) in images"
+          :key="i"
+          :src="image.url"
+          :text="image.text"
+      >
+        <div class="catalog__text-h2">
+           {{image.text}}
+        </div>
+      </v-carousel-item>
+    </v-carousel>
+    <div class="catalog__container_currency">
+
+      <StoreCatalogItem
+          v-for="(item, id) in PRODUCTS"
+          :key="id"
+          :name="item.name"
+          :product_url="item.product_url"
+          :fruit_data="item"
+      />
+    </div>
+    <div class="text-center">
+      <v-pagination
+          v-model="page"
+          :length="9"
+      ></v-pagination>
+    </div>
   </div>
-  <div class="text-center">
-    <v-pagination
-        v-model="page"
-        :length="9"
-    ></v-pagination>
-  </div>
-</div>
 </template>
 
 <script>
@@ -54,18 +49,37 @@ export default {
   components: {StoreCatalogItem},
 
   data: () => ({
-    page:99,
+    page: 99,
     model: 0,
-    colors: [
-      'primary',
-      'secondary',
-      'yellow darken-2',
-      'red',
-      'orange',
+    images: [
+      {
+        url: '../img/fresh-organic-farm-fruits-pears-quince-top-view.jpg',
+        text:'Gift Baskets!'
+      },
+      {
+        url: '../img/assortment-citruses-pink-table .jpg',
+        text:'Gift Baskets!'
+      },
+      {
+        url: '../img/slices-assorted-fruits .jpg',
+        text:'Gift Baskets!'
+      },
+      {
+        url: '../img/mixed-fruits-with-apple-banana-orange-other .jpg',
+        text:'Gift Baskets!'
+      },
     ],
+    slides: [
+      'First',
+      'Second',
+      'Third',
+      'Fourth',
+      'Fifth',
+    ],
+
   }),
 
-  computed:{
+  computed: {
     ...mapGetters(["PRODUCTS"])
   },
 
@@ -74,7 +88,7 @@ export default {
   },
 
   mounted() {
-      this.GET_PRODUCTS_FROM_API();
+    this.GET_PRODUCTS_FROM_API();
   },
 
 }
