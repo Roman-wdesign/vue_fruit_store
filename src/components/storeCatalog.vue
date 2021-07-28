@@ -1,6 +1,6 @@
 <template>
   <div class="catalog">
-    <h2>Catalog page</h2>
+
     <v-carousel v-model="model"
                 cycle
                 hide-delimiter-background
@@ -53,30 +53,22 @@ export default {
     model: 0,
     images: [
       {
-        url: '../img/fresh-organic-farm-fruits-pears-quince-top-view.jpg',
+        url: '../img/fresh-organic-farm-fruits-pears-quince-top-view .jpg',
         text:'Gift Baskets!'
       },
       {
         url: '../img/assortment-citruses-pink-table .jpg',
-        text:'Gift Baskets!'
+        text:'Wow Sale!'
       },
       {
         url: '../img/slices-assorted-fruits .jpg',
-        text:'Gift Baskets!'
+        text:'Only fresh!'
       },
       {
         url: '../img/mixed-fruits-with-apple-banana-orange-other .jpg',
-        text:'Gift Baskets!'
+        text: 'A wide range!'
       },
     ],
-    slides: [
-      'First',
-      'Second',
-      'Third',
-      'Fourth',
-      'Fifth',
-    ],
-
   }),
 
   computed: {

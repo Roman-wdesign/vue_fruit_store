@@ -1,15 +1,19 @@
-.catalog{
+.catalog {
   margin-top: 3.5rem;
-&__container_currency {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat( auto-fill, minmax(17rem, 1fr));
-  //grid-template-rows: repeat(1, 15rem);
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-  &__text-h2{
-font-size: $h2_size;
+
+  &__container_currency {
+    padding: 0 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat( auto-fill, minmax(17rem, 1fr));
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+
+  &__text-h2 {
+    font-size: $h2_size;
+    color:  $white;
   }
 }
 
