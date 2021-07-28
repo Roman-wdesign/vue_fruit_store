@@ -1,9 +1,9 @@
 <template>
 <div class="catalogItem">
+
+<div class="catalogItem-card">
   <v-hover
       v-slot="{ hover }">
-<div class="catalogItem-card">
-
     <v-card
         :elevation="hover ? 12 : 2"
         :loading="loading"
@@ -96,9 +96,9 @@
     </v-card>
 
 
-
-</div>
   </v-hover>
+</div>
+
 </div>
 </template>
 
