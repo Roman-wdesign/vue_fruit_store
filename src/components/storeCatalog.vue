@@ -18,6 +18,7 @@
         </div>
       </v-carousel-item>
     </v-carousel>
+
     <div class="catalog__container_currency">
 
       <StoreCatalogItem
