@@ -13,8 +13,9 @@
 
   &__text-h2 {
     font-size: $h2_size;
-    color:  $white;
+    color: $white;
+  }
+  &__text-p{
+    margin-top: 6rem;
   }
 }
-
-

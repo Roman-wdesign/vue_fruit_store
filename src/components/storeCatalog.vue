@@ -14,7 +14,7 @@
           :text="image.text"
       >
         <div class="catalog__text-h2">
-           {{image.text}}
+          <p class="catalog__text-p">{{image.text}}</p>
         </div>
       </v-carousel-item>
     </v-carousel>
