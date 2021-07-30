@@ -1,6 +1,24 @@
 .catalog {
   margin-top: 3.5rem;
 
+  &__divider {
+   color: $grey_text;
+    margin: 5rem 1rem 0 1rem;
+
+    &__line {
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid $grey_text;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+    }
+    &__line span{
+
+      background:#fff;
+      padding:0 1rem;
+    }
+  }
+
   &__container_currency {
     padding: 0 1rem;
     margin-top: 1rem;
@@ -10,12 +28,16 @@
     flex-wrap: wrap;
   }
 
-
   &__text-h2 {
     font-size: $h2_size;
     color: $white;
   }
-  &__text-p{
+
+  &__text-p {
     margin-top: 6rem;
+    font-size: $text-p;
   }
 }
+
+
+

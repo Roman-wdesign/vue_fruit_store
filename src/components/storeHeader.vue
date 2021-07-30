@@ -7,12 +7,41 @@
             src="fruit_logo.png"
         ></v-img>
       </div>
+      <div class="header__one__list">
+        <v-menu
+            open-on-hover
+            bottom
+            offset-y
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+                color="teal"
+                dark
+                v-bind="attrs"
+                v-on="on"
+            >
+              <div class="header__two-icons"><i class="fas fa-list-ul"></i></div>
+              All Categories
+            </v-btn>
+          </template>
+
+          <v-list>
+            <v-list-item
+                v-for="(click, index) in clicks"
+                :key="index"
+            >
+              <v-list-item-title>{{ click.title }}</v-list-item-title>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+
+      </div>
       <div class="header__one__search">
         <v-toolbar
             dark
             color="teal"
         >
-          <v-toolbar-title>State selection</v-toolbar-title>
+          <v-toolbar-title>Search store</v-toolbar-title>
           <v-autocomplete
               v-model="select"
               :loading="loading"
@@ -32,36 +61,8 @@
         </v-toolbar>
       </div>
     </div>
-    <div class="header__one__list">
-      <div class="text-center">
-        <v-menu
-            open-on-hover
-            bottom
-            offset-y
-        >
-          <template v-slot:activator="{ on, attrs }">
-            <v-btn
-                color="primary"
-                dark
-                v-bind="attrs"
-                v-on="on"
-            >
-              <div class="header__two-icons"><i class="fas fa-list-ul"></i></div>
-              All Categories
-            </v-btn>
-          </template>
 
-          <v-list>
-            <v-list-item
-                v-for="(click, index) in clicks"
-                :key="index"
-            >
-              <v-list-item-title>{{ click.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-      </div>
-    </div>
+
     <div class="header__two">
       <div class="header__two-icons">
         <i class="fas fa-sign-in-alt"></i>

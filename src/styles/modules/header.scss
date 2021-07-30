@@ -15,9 +15,17 @@
     flex-direction: row;
     color: $white;
 
+    &__list {
+      margin: 0 1rem;
+      align-items: center;
+      display: flex;
+
+    }
+
     &__picture {
       width: 80px;
       margin: 0 1rem 0 0;
+
       &-img {
         height: auto;
         width: 80%;

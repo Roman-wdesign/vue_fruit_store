@@ -14,10 +14,17 @@
           :text="image.text"
       >
         <div class="catalog__text-h2">
-          <p class="catalog__text-p">{{image.text}}</p>
+          <p class="catalog__text-p">{{ image.text }}</p>
         </div>
       </v-carousel-item>
     </v-carousel>
+
+      <div class="catalog__divider">
+        <h3 class="catalog__divider__line"><span>Select The Category</span></h3>
+      </div>
+    <div class="catalog__divider">
+      <h3 class="catalog__divider__line"><span>Best Sellers</span></h3>
+    </div>
 
     <div class="catalog__container_currency">
 
@@ -55,15 +62,15 @@ export default {
     images: [
       {
         url: '../img/fresh-organic-farm-fruits-pears-quince-top-view .jpg',
-        text:'Gift Baskets!'
+        text: 'Gift Baskets!'
       },
       {
         url: '../img/assortment-citruses-pink-table .jpg',
-        text:'Wow Sale!'
+        text: 'Wow Sale!'
       },
       {
         url: '../img/slices-assorted-fruits .jpg',
-        text:'Only fresh!'
+        text: 'Only fresh!'
       },
       {
         url: '../img/mixed-fruits-with-apple-banana-orange-other .jpg',
