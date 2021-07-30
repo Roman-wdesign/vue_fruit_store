@@ -9,6 +9,7 @@
             :loading="loading"
             class="mx-auto my-12"
             max-width="374"
+
         >
           <template slot="progress">
             <v-progress-linear
@@ -19,29 +20,9 @@
           </template>
           <v-img
               height="150"
-              v-if="fruit_data.name === 'Bananas'"
-              :src="'https://api.predic8.de/shop/products/3/photo'"
+              src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
           ></v-img>
-          <v-img
-              height="150"
-              v-else-if="fruit_data.name === 'Oranges'"
-              :src="'https://api.predic8.de/shop/products/10/photo'"
-          ></v-img>
-          <v-img
-              height="150"
-              v-else-if="fruit_data.name === 'Pineapples'"
-              :src="'https://api.predic8.de/shop/products/33/photo'"
-          ></v-img>
-          <v-img
-              height="150"
-              v-else-if="fruit_data.name === 'Dried Pineapples'"
-              :src="'https://api.predic8.de/shop/products/42/photo'"
-          ></v-img>
-          <v-img
-              height="150"
-              v-else-if="fruit_data.name === 'Cranberries'"
-              :src="'https://api.predic8.de/shop/products/57/photo'"
-          ></v-img>
+
           <v-card-title><p>{{ fruit_data.name }}</p></v-card-title>
 
           <v-card-text>
@@ -66,7 +47,7 @@
 
             <div class="my-4 text-subtitle-1">
               <strong>Price</strong>
-              <p>${{ fruit_data.product_url.price }}</p>
+              <p>${{ fruit_data.price }}</p>
             </div>
           </v-card-text>
 

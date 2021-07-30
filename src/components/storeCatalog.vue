@@ -2,6 +2,7 @@
   <div class="catalog">
 
     <v-carousel v-model="model"
+                style="max-height: 450px"
                 cycle
                 hide-delimiter-background
                 show-arrows-on-hover
@@ -19,9 +20,67 @@
       </v-carousel-item>
     </v-carousel>
 
-      <div class="catalog__divider">
-        <h3 class="catalog__divider__line"><span>Select The Category</span></h3>
+    <div class="catalog__divider">
+      <h3 class="catalog__divider__line"><span>Select The Category</span></h3>
+    </div>
+
+    <div class="catalog__category">
+      <div class="catalog__category_button">
+        <v-btn class="catalog__category_button_btn">
+          <v-img
+
+              height="25"
+              width="25"
+              src="img/buttons_img/pineapple.png"
+          ></v-img>
+          <p>Fruits</p></v-btn>
       </div>
+
+      <div class="catalog__category_button">
+        <v-btn class="catalog__category_button_btn">
+          <v-img
+
+              height="25"
+              width="25"
+              src="img/buttons_img/almond.png"
+          ></v-img>
+          <p>Dried</p></v-btn>
+      </div>
+
+      <div class="catalog__category_button">
+        <v-btn class="catalog__category_button_btn">
+          <v-img
+
+              height="25"
+              width="25"
+              src="img/buttons_img/cherry.png"
+          ></v-img>
+          <p>Fresh</p></v-btn>
+      </div>
+
+      <div class="catalog__category_button">
+        <v-btn class="catalog__category_button_btn">
+          <v-img
+
+              height="25"
+              width="25"
+              src="img/buttons_img/sapodilla.png"
+          ></v-img>
+          <p>Exotic</p></v-btn>
+      </div>
+
+      <div class="catalog__category_button">
+        <v-btn class="catalog__category_button_btn">
+          <v-img
+
+              height="25"
+              width="25"
+              src="img/buttons_img/cashew.png"
+          ></v-img>
+          <p>Nuts</p></v-btn>
+      </div>
+    </div>
+
     <div class="catalog__divider">
       <h3 class="catalog__divider__line"><span>Best Sellers</span></h3>
     </div>
@@ -70,11 +129,11 @@ export default {
       },
       {
         url: '../img/slices-assorted-fruits .jpg',
-        text: 'Only fresh!'
+        text: 'Only Natural!'
       },
       {
         url: '../img/mixed-fruits-with-apple-banana-orange-other .jpg',
-        text: 'A wide range!'
+        text: 'A Wide Range!'
       },
     ],
   }),

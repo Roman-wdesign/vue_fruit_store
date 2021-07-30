@@ -41,23 +41,20 @@
             dark
             color="teal"
         >
-          <v-toolbar-title>Search store</v-toolbar-title>
+
           <v-autocomplete
               v-model="select"
               :loading="loading"
               :items="items"
               :search-input.sync="search"
               cache-items
-              class="mx-4"
+              class="mx-1"
               flat
               hide-no-data
               hide-details
               label="What fruit do you need?"
               solo-inverted
           ></v-autocomplete>
-          <v-btn icon>
-            <v-icon>mdi-dots-vertical</v-icon>
-          </v-btn>
         </v-toolbar>
       </div>
     </div>
