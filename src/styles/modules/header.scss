@@ -4,20 +4,39 @@
   top: 0;
   position: fixed;
   width: 100%;
-  padding: $padding ;
+  padding: $padding;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 
-  &-header {
+  &__one {
+    display: flex;
+    flex-direction: row;
     color: $white;
-  }
 
-  &__picture {
-    &-img {
-      height: auto;
-      width: 13.8%
+    &__picture {
+      width: 80px;
+      margin: 0 1rem 0 0;
+      &-img {
+        height: auto;
+        width: 80%;
+      }
     }
   }
+
+
+  &__two-icons {
+    margin: 0 1rem 0 0;
+  }
+}
+
+.fa-sign-in-alt {
+  color: $grey_icon;
+  margin: 0 1rem 0 0
+}
+
+.fa-shopping-bag {
+  color: $grey_icon;
 
 }
