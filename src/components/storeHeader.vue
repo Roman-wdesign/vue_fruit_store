@@ -74,7 +74,6 @@
 </template>
 
 <script>
-import {mapActions, mapGetters} from "vuex"
 
 export default {
   name: "storeHeader",
@@ -159,10 +158,9 @@ export default {
     },
   },
   computed: {
-    ...mapGetters(["CATEGORIES"])
   },
   methods: {
-    ...mapActions(["GET_CATEGORIES_FROM_API"]),
+
     querySelections(v) {
       this.loading = true
       // Simulated ajax query
@@ -175,7 +173,7 @@ export default {
     },
   },
   mounted() {
-    this.GET_CATEGORIES_FROM_API();
+
   },
 
 }
