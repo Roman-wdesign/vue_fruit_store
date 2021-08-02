@@ -27,10 +27,11 @@
 
           <v-list>
             <v-list-item
-                v-for="(click, index) in clicks"
+                v-for="(item, index) in CATEGORIES"
                 :key="index"
+                :name="item.name"
             >
-              <v-list-item-title>{{ click.title }}</v-list-item-title>
+              <v-list-item-title>{{ item.name }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -70,6 +71,8 @@
 </template>
 
 <script>
+import {mapActions, mapGetters} from "vuex"
+
 export default {
   name: "storeHeader",
   data: () => ({
@@ -150,7 +153,11 @@ export default {
       val && val !== this.select && this.querySelections(val)
     },
   },
+  computed: {
+    ...mapGetters(["CATEGORIES"])
+  },
   methods: {
+    ...mapActions(["GET_CATEGORIES_FROM_API"]),
     querySelections(v) {
       this.loading = true
       // Simulated ajax query
@@ -162,6 +169,10 @@ export default {
       }, 500)
     },
   },
+  mounted() {
+    this.GET_CATEGORIES_FROM_API();
+  },
+
 }
 </script>
 

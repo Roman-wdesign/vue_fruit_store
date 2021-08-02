@@ -26,7 +26,7 @@
 
     <div class="catalog__category">
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn">
+        <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
@@ -37,7 +37,7 @@
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn">
+        <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
@@ -48,7 +48,7 @@
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn">
+        <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
@@ -59,7 +59,7 @@
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn">
+        <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
@@ -70,7 +70,7 @@
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn">
+        <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
