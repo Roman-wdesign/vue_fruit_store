@@ -12,10 +12,12 @@
             open-on-hover
             bottom
             offset-y
+            close-delay="2"
+            transition="scale-transition"
         >
           <template v-slot:activator="{ on, attrs }">
             <v-btn
-                color="teal"
+                color="teal darken-4"
                 dark
                 v-bind="attrs"
                 v-on="on"
@@ -41,7 +43,7 @@
       <div class="header__one__search">
         <v-toolbar
             dark
-            color="teal"
+            color="teal darken-4"
         >
 
           <v-autocomplete
@@ -56,6 +58,7 @@
               hide-details
               label="What fruit do you need?"
               solo-inverted
+
           ></v-autocomplete>
         </v-toolbar>
       </div>
@@ -142,12 +145,7 @@ export default {
       'Wisconsin',
       'Wyoming',
     ],
-    clicks: [
-      {title: 'Click Me'},
-      {title: 'Click Me'},
-      {title: 'Click Me'},
-      {title: 'Click Me 2'},
-    ],
+
   }),
   watch: {
     search(val) {
