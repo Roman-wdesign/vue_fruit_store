@@ -30,6 +30,7 @@
                 v-for="(item, index) in CATEGORIES"
                 :key="index"
                 :name="item.name"
+                link
             >
               <v-list-item-title>{{ item.name }}</v-list-item-title>
             </v-list-item>
