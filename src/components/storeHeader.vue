@@ -29,12 +29,11 @@
 
           <v-list>
             <v-list-item
-                v-for="(item, index) in CATEGORIES"
+                v-for="(click, index) in clicks"
                 :key="index"
-                :name="item.name"
                 link
             >
-              <v-list-item-title>{{ item.name }}</v-list-item-title>
+              <v-list-item-title>{{ click.title }}</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -144,6 +143,13 @@ export default {
       'West Virginia',
       'Wisconsin',
       'Wyoming',
+    ],
+    clicks: [
+      { title: 'Fruits' },
+      { title: 'Dried' },
+      { title: 'Fresh' },
+      { title: 'Exotic' },
+      { title: 'Nuts' },
     ],
 
   }),
