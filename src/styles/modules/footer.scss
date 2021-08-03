@@ -2,25 +2,48 @@
   width: 100%;
   background-color: #e2e2e2;
   padding: $padding;
+  &__first{
+    text-align: left;
+  }
 
   &-all_rights {
     padding: 1rem 0;
   }
 
   &__links {
+    margin: 1.5rem 0;
+
     display: flex;
     flex-direction: column;
-  }
+    justify-content: space-between;
 
-  &__social {
-    padding: 1.5rem 0;
-    display: flex;
-    flex-direction: row;
-  }
+    &-banner {
+      padding: 1rem 0 0 0;
+      color: $dark_text;
 
-  &__payment {
+    }
+    &__social {
+      padding: 1.5rem 0;
+      display: flex;
+      flex-direction: row;
+    }
+    &__payment {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  &__second{
     display: flex;
     flex-direction: column;
+    justify-content: left;
+    color: $dark_text;
+    a{
+      text-decoration: none;
+      color: $dark_text !important;
+      &:hover {
+        color: $hover_link !important;
+      }
+    }
   }
 }
 
