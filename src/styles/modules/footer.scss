@@ -1,8 +1,54 @@
-.footer{
+.footer {
   width: 100%;
   background-color: #e2e2e2;
   padding: $padding;
-  &-all_rights{
+
+  &-all_rights {
     padding: 1rem 0;
   }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__social {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__payment {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+.fa-twitter,
+.fa-instagram,
+.fa-facebook-f,
+.fa-youtube {
+  color: $grey_icon;
+  padding: 0 10px 0 0;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: $hover_link;
+  }
+}
+
+.fa-cc-visa,
+.fa-cc-mastercard, {
+  padding: 0 10px 0 0;
+  font-size: 2rem;
+  color: $grey_icon;
+
+  &:hover {
+    color: $hover_link;
+  }
+}
+
+.fa-youtube {
+  padding: 0
 }
