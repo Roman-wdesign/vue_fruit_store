@@ -101,6 +101,32 @@
           :length="9"
       ></v-pagination>
     </div>
+    <div class="catalog__parallax">
+      <v-parallax
+          src="img/top-fresh-mandarines.jpg"
+          height="400"
+      >
+        <v-row
+            align="center"
+            justify="center"
+        >
+          <v-col
+              class="text-sm-left ml-16"
+              cols="12"
+              style="color: #363636"
+          >
+            <h3 class="text-h4 mb-4" >
+              Why choose us
+            </h3>
+            <p>
+              Orange is a one-stop grocery shopping store in Europe,
+            </p>
+            <p> bringing all your shopping needs right to your fingertips and aims to redefine your online shopping experience.</p>
+            <p> Order Fresh  Fruits, Dry Food, Exotic, Nuts at the best prices & get it delivered to your doorstep.</p>
+          </v-col>
+        </v-row>
+      </v-parallax>
+    </div>
   </div>
 </template>
 

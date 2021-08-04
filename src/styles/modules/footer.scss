@@ -1,7 +1,12 @@
 .footer {
   width: 100%;
   background-color: #e2e2e2;
-  padding: $padding;
+  padding: $padding*5 $padding $padding $padding;
+  &__container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__first{
     text-align: left;
   }
@@ -35,7 +40,6 @@
   &__second{
     display: flex;
     flex-direction: column;
-    justify-content: left;
     color: $dark_text;
     a{
       text-decoration: none;
