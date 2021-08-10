@@ -3,7 +3,7 @@
     <store-header/>
     <div class="delivery_container">
       <div class="catalog__divider">
-        <h3 class="catalog__divider__line"><span>Delivery & Returns</span></h3>
+        <h3 class="catalog__divider__line"><span>New Products</span></h3>
       </div>
       <div class="delivery_content">
         <div class="delivery__content_order">
@@ -55,11 +55,11 @@
 </template>
 
 <script>
-import StoreHeader from "@/components/storeHeader";
 import StoreFooter from "@/components/storeFooter";
+import StoreHeader from "@/components/storeHeader";
 
 export default {
-  name: "storeDelivery",
+  name: "storeNew",
   components: {StoreFooter, StoreHeader}
 }
 </script>

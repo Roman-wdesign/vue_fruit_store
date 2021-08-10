@@ -3,10 +3,12 @@
     <div class="footer__container">
       <div class="footer__first">
         <div class="header__one__picture">
-          <v-img
-              class="header__one__picture-img"
-              src="fruit_logo.png"
-          ></v-img>
+          <router-link to="/">
+            <v-img
+                class="header__one__picture-img"
+                src="fruit_logo.png"
+            ></v-img>
+          </router-link>
         </div>
         <div class="footer__links">
           <div class="footer__links-banner"><p>Follow Us</p></div>
@@ -28,7 +30,13 @@
         <span>Email: mail@wbcplace.ru</span>
       </div>
       <div class="footer__third">
+        <div class="footer__links-banner"><p>Information</p></div>
          <router-link to="/delivery">Delivery</router-link>
+        <router-link to="/loyalty">Loyalty</router-link>
+      </div>
+      <div class="footer__third">
+        <div class="footer__links-banner"><p>Customer Service</p></div>
+        <router-link to="/new">New products</router-link>
       </div>
     </div>
 

@@ -2,11 +2,14 @@
   <div class="header">
     <div class="header__one">
       <div class="header__one__picture">
-        <v-img
-            class="header__one__picture-img"
-            src="fruit_logo.png"
-        ></v-img>
+        <router-link to="/">
+          <v-img
+              class="header__one__picture-img"
+              src="fruit_logo.png"
+          ></v-img>
+        </router-link>
       </div>
+
       <div class="header__one__list">
         <v-menu
             open-on-hover
@@ -144,11 +147,11 @@ export default {
       'Wyoming',
     ],
     clicks: [
-      { title: 'Fruits' },
-      { title: 'Dried' },
-      { title: 'Fresh' },
-      { title: 'Exotic' },
-      { title: 'Nuts' },
+      {title: 'Fruits'},
+      {title: 'Dried'},
+      {title: 'Fresh'},
+      {title: 'Exotic'},
+      {title: 'Nuts'},
     ],
 
   }),
@@ -157,8 +160,7 @@ export default {
       val && val !== this.select && this.querySelections(val)
     },
   },
-  computed: {
-  },
+  computed: {},
   methods: {
 
     querySelections(v) {

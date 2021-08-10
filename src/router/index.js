@@ -5,6 +5,8 @@ import storeCatalog from "@/components/storeCatalog";
 import storeDelivery from "@/components/storeDelivery";
 import storeFooter from "@/components/storeFooter";
 import storeHeader from "@/components/storeHeader";
+import storeLoyalty from "@/components/storeLoyalty";
+import storeNew from "@/components/storeNew";
 
 Vue.use(VueRouter)
 
@@ -33,6 +35,16 @@ const routes = [
     path: '/delivery',
     name: 'Delivery',
     component: storeDelivery
+  },
+  {
+    path: '/loyalty',
+    name: 'Loyalty',
+    component: storeLoyalty
+  },
+  {
+    path: '/new',
+    name: 'New',
+    component: storeNew
   },
   {
     path: '/about',
