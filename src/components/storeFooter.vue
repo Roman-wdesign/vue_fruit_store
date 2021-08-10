@@ -28,7 +28,7 @@
         <span>Email: mail@wbcplace.ru</span>
       </div>
       <div class="footer__third">
-
+         <router-link to="/delivery">Delivery</router-link>
       </div>
     </div>
 
@@ -38,16 +38,15 @@
     <div class="footer-all_rights">
       <p>Copyright © 2021 Orange. All rights reserved.</p>
     </div>
-
   </div>
 </template>
 
 <script>
+
 export default {
-  name: "storeFooter"
+  name: "storeFooter",
+  data: () => ({}),
+  components: {}
 }
 </script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

@@ -1,12 +1,19 @@
 <template>
   <div class="main">
-    <h1>Main page</h1>
+    <store-header/>
+    <store-catalog/>
+    <store-footer/>
   </div>
 </template>
 
 <script>
+import StoreHeader from "@/components/storeHeader";
+import StoreCatalog from "@/components/storeCatalog";
+import StoreFooter from "@/components/storeFooter";
+
 export default {
-  name: "storeMain"
+  name: "storeMain",
+  components: {StoreFooter, StoreCatalog, StoreHeader}
 }
 </script>
 

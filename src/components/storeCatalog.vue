@@ -104,7 +104,7 @@
     <div class="catalog__parallax">
       <v-parallax
           src="img/top-fresh-mandarines.jpg"
-          height="400"
+          height="500"
       >
         <v-row
             align="center"
