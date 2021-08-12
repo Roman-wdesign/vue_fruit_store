@@ -20,4 +20,5 @@ description: The  Orange App
 2. [x] v-btn
 3. [x] v-img
 4. [x] v-parallax
+5. [x] v-card
 
