@@ -1,6 +1,6 @@
 # Initial page
 
-{% hint style="info" %}
+{% hint style="danger" %}
 ddd
 {% endhint %}
 
