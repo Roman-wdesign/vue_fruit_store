@@ -14,7 +14,10 @@ description: The  Orange App
 * Jest
 * Google maps
 
-### VUE
+### VUETIFY
 
-1. [x] components
-2. [ ] 
+1. [x] v-carousel
+2. [x] v-btn
+3. [x] v-img
+4. [x] v-parallax
+
