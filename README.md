@@ -21,4 +21,5 @@ description: The  Orange App
 3. [x] v-img
 4. [x] v-parallax
 5. [x] v-card
+6. [x] v-hover
 
