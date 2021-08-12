@@ -14,3 +14,7 @@ description: The  Orange App
 * Jest
 * Google maps
 
+### VUE
+
+1. [x] components
+2. [ ] 
