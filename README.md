@@ -1,4 +1,8 @@
-# Initial page
+---
+description: The  Orange App
+---
+
+# Vue fruit store
 
 * Vue.js
 * Vuetify
