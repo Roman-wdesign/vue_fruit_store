@@ -7,10 +7,16 @@ import storeFooter from "@/components/storeFooter";
 import storeHeader from "@/components/storeHeader";
 import storeLoyalty from "@/components/storeLoyalty";
 import storeNew from "@/components/storeNew";
+import storeError from "../components/storeError";
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: "/page-not-found",
+    alias: '*',
+    component:storeError,
+  },
   {
     path: '/',
     name: 'Main',
@@ -49,10 +55,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+
   }
 ]
 

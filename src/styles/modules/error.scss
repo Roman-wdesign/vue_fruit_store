@@ -1,0 +1,19 @@
+.page_error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &_img {
+
+    height: 50%;
+    width: 50%;
+  }
+  &_text{
+
+  }
+  &_header{
+    margin: 2rem 0;
+
+  }
+}

@@ -3,6 +3,7 @@
     <store-header/>
     <store-catalog/>
     <store-footer/>
+    <router-view/>
   </div>
 </template>
 
