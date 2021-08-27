@@ -12,7 +12,8 @@ description: The  Orange App
 * Axios
 * REST API [https://api.predic8.de/shop/docs\#!/categories/getCategories](https://api.predic8.de/shop/docs#!/categories/getCategories)
 * Jest
-* Google maps
+* Yandex maps
+* Table
 
 ### VUETIFY
 
