@@ -1,6 +1,5 @@
 <template>
   <div class="delivery">
-
     <div class="delivery_container">
       <div class="catalog__divider">
         <h3 class="catalog__divider__line"><span>Delivery & Returns</span></h3>
@@ -50,7 +49,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </template>
 

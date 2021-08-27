@@ -3,9 +3,9 @@
     <v-app>
       <store-header/>
       <v-main>
-<!--              <transition name="fade">-->
+              <transition name="fade">
         <router-view/>
-<!--              </transition>-->
+              </transition>
       </v-main>
       <store-footer/>
     </v-app>

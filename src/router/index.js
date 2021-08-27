@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import storeMain from "@/components/storeMain";
 import storeCatalog from "@/components/storeCatalog";
 import storeDelivery from "@/components/storeDelivery";
@@ -7,7 +8,8 @@ import storeFooter from "@/components/storeFooter";
 import storeHeader from "@/components/storeHeader";
 import storeLoyalty from "@/components/storeLoyalty";
 import storeNew from "@/components/storeNew";
-import storeError from "../components/storeError";
+import storeError from "@/components/storeError";
+import storeAddress from "@/components/storeAddress";
 
 Vue.use(VueRouter)
 
@@ -56,6 +58,11 @@ const routes = [
     {
         path: '/about',
         name: 'About',
+    },
+    {
+        path: '/address',
+        name: 'storeAddress',
+        component:storeAddress
     }
 ]
 

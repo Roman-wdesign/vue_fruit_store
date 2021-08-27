@@ -38,6 +38,10 @@
         <div class="footer__links-banner"><p>Customer Service</p></div>
         <router-link to="/new">New products</router-link>
       </div>
+      <div class="footer__third">
+        <div class="footer__links-banner"><p>My Account</p></div>
+        <router-link to="/address">Address</router-link>
+      </div>
     </div>
 
     <div class="catalog__divider">

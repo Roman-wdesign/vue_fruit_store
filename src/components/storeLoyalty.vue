@@ -1,7 +1,5 @@
 <template>
   <div class="loyalty">
-
-
     <div class="loyalty_container">
       <div class="catalog__divider">
         <h3 class="catalog__divider__line"><span>Loyalty Program</span></h3>
@@ -17,8 +15,6 @@
         <p>Maximum reward points to use per order: 0 (no limit)</p>
       </div>
     </div>
-
-
   </div>
 </template>
 
