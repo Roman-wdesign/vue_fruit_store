@@ -12,55 +12,57 @@ import storeError from "../components/storeError";
 Vue.use(VueRouter)
 
 const routes = [
-  {
-    path: "/page-not-found",
-    alias: '*',
-    component:storeError,
-  },
-  {
-    path: '/',
-    name: 'Main',
-    component: storeMain
-  },
-  {
-    path: '/catalog',
-    name: 'Catalog',
-    component: storeCatalog
-  },
-  {
-    path: '/header',
-    name: 'Header',
-    component: storeHeader
-  },
-  {
-    path: '/footer',
-    name: 'Footer',
-    component: storeFooter,
-  },
-  {
-    path: '/delivery',
-    name: 'Delivery',
-    component: storeDelivery
-  },
-  {
-    path: '/loyalty',
-    name: 'Loyalty',
-    component: storeLoyalty
-  },
-  {
-    path: '/new',
-    name: 'New',
-    component: storeNew
-  },
-  {
-    path: '/about',
-    name: 'About',
+    {
+        path: "/page-not-found",
+        alias: '*',
+        component: storeError,
+    },
+    {
+        path: '/',
+        name: 'Main',
+        component: storeMain
+    },
+    {
+        path: '/catalog',
+        name: 'Catalog',
+        component: storeCatalog
+    },
+    {
+        path: '/header',
+        name: 'Header',
+        component: storeHeader
+    },
+    {
+        path: '/footer',
+        name: 'Footer',
+        component: storeFooter,
 
-  }
+    },
+    {
+        path: '/delivery',
+        name: 'Delivery',
+        component: storeDelivery
+    },
+    {
+        path: '/loyalty',
+        name: 'Loyalty',
+        component: storeLoyalty
+    },
+    {
+        path: '/new',
+        name: 'New',
+        component: storeNew
+    },
+    {
+        path: '/about',
+        name: 'About',
+    }
 ]
 
 const router = new VueRouter({
-  routes
+    routes,
+    mode: "history",
+
 })
 
 export default router

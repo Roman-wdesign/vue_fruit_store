@@ -31,8 +31,8 @@
       </div>
       <div class="footer__third">
         <div class="footer__links-banner"><p>Information</p></div>
-         <router-link to="/delivery">Delivery</router-link>
-         <router-link to="/loyalty">Loyalty</router-link>
+        <router-link  to="/delivery" exact>Delivery</router-link>
+        <router-link to="/loyalty" exact>Loyalty</router-link>
       </div>
       <div class="footer__third">
         <div class="footer__links-banner"><p>Customer Service</p></div>

@@ -1,9 +1,10 @@
 <template>
   <div class="main">
-    <store-header/>
-    <store-catalog/>
-    <store-footer/>
-    <router-view/>
+
+      <store-header/>
+      <store-catalog/>
+      <store-footer/>
+
   </div>
 </template>
 

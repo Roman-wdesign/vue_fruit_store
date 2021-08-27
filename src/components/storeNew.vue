@@ -1,6 +1,6 @@
 <template>
   <div class="delivery">
-    <store-header/>
+
     <div class="delivery_container">
       <div class="catalog__divider">
         <h3 class="catalog__divider__line"><span>New Products</span></h3>
@@ -50,17 +50,15 @@
         </div>
       </div>
     </div>
-    <store-footer/>
+
   </div>
 </template>
 
 <script>
-import StoreFooter from "@/components/storeFooter";
-import StoreHeader from "@/components/storeHeader";
 
 export default {
   name: "storeNew",
-  components: {StoreFooter, StoreHeader}
+  components: {}
 }
 </script>
 

@@ -13,12 +13,13 @@
       <div class="header__one__picture">
         <div class="footer__third">
 
-         <router-link to="/"> <v-btn
-             depressed
-             color="#42d58e"
-         >go home</v-btn></router-link>
-
-
+          <router-link to="/">
+            <v-btn
+                depressed
+                color="#42d58e"
+            >go home
+            </v-btn>
+          </router-link>
         </div>
       </div>
     </div>

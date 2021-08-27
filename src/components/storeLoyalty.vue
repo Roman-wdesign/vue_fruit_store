@@ -1,6 +1,7 @@
 <template>
   <div class="loyalty">
-    <store-header/>
+
+
     <div class="loyalty_container">
       <div class="catalog__divider">
         <h3 class="catalog__divider__line"><span>Loyalty Program</span></h3>
@@ -16,17 +17,16 @@
         <p>Maximum reward points to use per order: 0 (no limit)</p>
       </div>
     </div>
-    <store-footer/>
+
+
   </div>
 </template>
 
 <script>
-import StoreFooter from "@/components/storeFooter";
-import StoreHeader from "@/components/storeHeader";
 
 export default {
   name: "storeLoyalty",
-  components: {StoreFooter, StoreHeader}
+  components: {}
 }
 </script>
 
