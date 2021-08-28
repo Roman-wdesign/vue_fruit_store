@@ -8,7 +8,6 @@
         <div class="panel-body">
           <label class="switch">
             <input type="checkbox" @click="toggleCheckbox">
-            // eslint-disable-next-line no-undef
             <div class="slider round"></div>
           </label>
         </div>
