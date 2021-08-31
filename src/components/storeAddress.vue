@@ -15,6 +15,7 @@
       <h3>Our addresses</h3>
       <div id="yandex-map" v-show="checkbox" style="width: 100%; height: 500px; padding: 2rem 0"
            :groups=groups
+
       ></div>
 
       <div class="yandex_map_results" v-show="!checkbox">
@@ -52,16 +53,14 @@ export default {
               center: [55.778922068976605, 37.71569549999996],
               zoom: 10,
               controls: ['fullscreenControl', 'rulerControl'],
-              searchControlProvider: 'yandex#search'
+              searchControlProvider: 'yandex#search',
             });
 
             // eslint-disable-next-line no-undef
             let searchControl = new ymaps.control.SearchControl({
               options: {
                 provider: 'yandex#search',
-
               }
-
             });
 
             this.map.controls.add(searchControl);
@@ -78,7 +77,7 @@ export default {
     getCoordData() {
       return new Promise(r => setTimeout(() => {
         this.groups = [
-           "Москва, Бакунинская улица, 32/36к1",
+           "Москва, Большой Палашёвский переулок, 1/14с1",
            "Москва,Плетешковский переулок, 3с2",
            "Москва, Щербаковская улица, 35",
            "Москва, улица Земляной Вал, 64с2",
@@ -89,17 +88,17 @@ export default {
     setMarkers() {
       for (let i = 0; i < this.groups.length; i++) {
         // eslint-disable-next-line no-undef
-        let PlacemarkOne = new ymaps.Placemark([55.77536806896744, 37.68623949999987], {
+        let PlacemarkOne = new ymaps.Placemark([55.76361956896707,37.59706399999992], {
               iconContent: '1',
               balloonContent: 'The Orange main store',
-              hintContent: 'Москва, Бакунинская улица, 32/36к1'
+              hintContent: 'Москва, Большой Палашёвский переулок, 1/14с1'
             },
 
             {
               preset: 'twirl#orangeIcon'
             });
         // eslint-disable-next-line no-undef
-        let PlacemarkTwo = new ymaps.Placemark([55.77161106895781, 37.67528899999994], {
+        let PlacemarkTwo = new ymaps.Placemark([55.77198565059403,37.67582410069842], {
               iconContent: '2',
               balloonContent: 'The Orange store',
               hintContent: 'Москва,Плетешковский переулок, 3с2'
