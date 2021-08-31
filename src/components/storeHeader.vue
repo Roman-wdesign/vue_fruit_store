@@ -89,10 +89,7 @@ export default {
       'Cranberries',
       'Magons',
       'Bananas',
-      'Cranberries',
-      'Magons',
       'Durian',
-      'Bananas',
       'Apples',
     ],
     clicks: [
