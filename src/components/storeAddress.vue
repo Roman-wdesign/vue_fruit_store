@@ -19,7 +19,7 @@
 
       <div class="yandex_map_results" v-show="!checkbox">
         <ul>
-          <li
+          <li style="margin: 0 0 5px 0"
               v-for="(value, index) in groups"
               :key="index">
             {{ value }}
@@ -58,7 +58,8 @@ export default {
             // eslint-disable-next-line no-undef
             let searchControl = new ymaps.control.SearchControl({
               options: {
-                provider: 'yandex#search'
+                provider: 'yandex#search',
+
               }
 
             });
@@ -77,10 +78,10 @@ export default {
     getCoordData() {
       return new Promise(r => setTimeout(() => {
         this.groups = [
-          [55.77536806896744, 37.68623949999987, "Москва, Бакунинская улица, 32/36к1"],
-          [55.77161106895781, 37.67528899999994, "Москва,Плетешковский переулок, 3с2"],
-          [55.782870568956966, 37.729619499999956, "Москва, Щербаковская улица, 35"],
-          [55.74618756898188, 37.654708499999956, "Москва, улица Земляной Вал, 64с2"],
+           "Москва, Бакунинская улица, 32/36к1",
+           "Москва,Плетешковский переулок, 3с2",
+           "Москва, Щербаковская улица, 35",
+           "Москва, улица Земляной Вал, 64с2",
         ];
         r();
       }, 1000));
@@ -88,8 +89,44 @@ export default {
     setMarkers() {
       for (let i = 0; i < this.groups.length; i++) {
         // eslint-disable-next-line no-undef
-        let placemark = new ymaps.Placemark(this.groups[i]);
-        this.map.geoObjects.add(placemark);
+        let PlacemarkOne = new ymaps.Placemark([55.77536806896744, 37.68623949999987], {
+              iconContent: '1',
+              balloonContent: 'The Orange main store',
+              hintContent: 'Москва, Бакунинская улица, 32/36к1'
+            },
+
+            {
+              preset: 'twirl#orangeIcon'
+            });
+        // eslint-disable-next-line no-undef
+        let PlacemarkTwo = new ymaps.Placemark([55.77161106895781, 37.67528899999994], {
+              iconContent: '2',
+              balloonContent: 'The Orange store',
+              hintContent: 'Москва,Плетешковский переулок, 3с2'
+            },
+            {
+              preset: 'twirl#orangeIcon'
+            });
+        // eslint-disable-next-line no-undef
+        let PlacemarkThree = new ymaps.Placemark([55.782870568956966, 37.729619499999956], {
+              iconContent: '3',
+              balloonContent: 'The Orange store',
+              hintContent: 'Москва, Щербаковская улица, 35'
+            },
+            {
+              preset: 'twirl#orangeIcon'
+            });
+        // eslint-disable-next-line no-undef
+        let PlacemarkFour = new ymaps.Placemark([55.74618756898188, 37.654708499999956], {
+              iconContent: '4',
+              balloonContent: 'The Orange store',
+              hintContent: 'Москва, улица Земляной Вал, 64с2'
+            },
+            {preset: 'twirl#orangeIcon'});
+        this.map.geoObjects.add(PlacemarkOne);
+        this.map.geoObjects.add(PlacemarkTwo);
+        this.map.geoObjects.add(PlacemarkThree);
+        this.map.geoObjects.add(PlacemarkFour);
       }
     },
   },
