@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default {
     GET_PRODUCTS_FROM_API({ commit }) {
-        const urlMain = "https://api.predic8.de/shop/products/";
+        const urlMain = "https://api.predic8.de:443/shop/products/";
         return axios(urlMain, {
             method: "GET",
             timeout: 1000,

@@ -26,58 +26,64 @@
 
     <div class="catalog__category">
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn" large>
-          <v-img
+        <router-link to="/fruits" style="text-decoration: none">
+          <v-btn class="catalog__category_button_btn" large>
+            <v-img
 
-              height="25"
-              width="25"
-              src="img/buttons_img/pineapple.png"
-          ></v-img>
-          <p>Fruits</p></v-btn>
+                height="25"
+                width="25"
+                src="img/buttons_img/pineapple.png"
+            ></v-img>
+            <p>Fruits</p></v-btn>
+        </router-link>
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn" large>
+
+        <router-link to="/dried" style="text-decoration: none"> <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
               width="25"
               src="img/buttons_img/almond.png"
           ></v-img>
-          <p>Dried</p></v-btn>
+          <p>Dried</p></v-btn></router-link>
+
+      </div>
+
+<!--      <div class="catalog__category_button">-->
+<!--        <router-link to="/fresh" style="text-decoration: none"><v-btn class="catalog__category_button_btn" large>-->
+<!--          <v-img-->
+
+<!--              height="25"-->
+<!--              width="25"-->
+<!--              src="img/buttons_img/cherry.png"-->
+<!--          ></v-img>-->
+<!--          <p>Fresh</p></v-btn></router-link>-->
+<!--      </div>-->
+
+      <div class="catalog__category_button">
+        <router-link to="/exotic" style="text-decoration: none">
+          <v-btn class="catalog__category_button_btn" large>
+            <v-img
+
+                height="25"
+                width="25"
+                src="img/buttons_img/sapodilla.png"
+            ></v-img>
+            <p>Exotic</p></v-btn>
+        </router-link>
       </div>
 
       <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn" large>
-          <v-img
-
-              height="25"
-              width="25"
-              src="img/buttons_img/cherry.png"
-          ></v-img>
-          <p>Fresh</p></v-btn>
-      </div>
-
-      <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn" large>
-          <v-img
-
-              height="25"
-              width="25"
-              src="img/buttons_img/sapodilla.png"
-          ></v-img>
-          <p>Exotic</p></v-btn>
-      </div>
-
-      <div class="catalog__category_button">
-        <v-btn class="catalog__category_button_btn" large>
+        <router-link to="/nuts" style="text-decoration: none"> <v-btn class="catalog__category_button_btn" large>
           <v-img
 
               height="25"
               width="25"
               src="img/buttons_img/cashew.png"
           ></v-img>
-          <p>Nuts</p></v-btn>
+          <p>Nuts</p></v-btn></router-link>
       </div>
     </div>
 
@@ -91,7 +97,7 @@
           v-for="(item, id) in PRODUCTS"
           :key="id"
           :name="item.name"
-          :product_url="item.product_url"
+          :price="item.price"
           :fruit_data="item"
       />
     </div>
@@ -115,14 +121,15 @@
               cols="12"
               style="color: #363636"
           >
-            <h3 class="text-h4 mb-4" >
+            <h3 class="text-h4 mb-4">
               Why choose us
             </h3>
             <p>
               Orange is a one-stop grocery shopping store in Europe,
             </p>
-            <p> bringing all your shopping needs right to your fingertips and aims to redefine your online shopping experience.</p>
-            <p> Order Fresh  Fruits, Dry Food, Exotic, Nuts at the best prices & get it delivered to your doorstep.</p>
+            <p> bringing all your shopping needs right to your fingertips and aims to redefine your online shopping
+              experience.</p>
+            <p> Order Fresh Fruits, Dry Food, Exotic, Nuts at the best prices & get it delivered to your doorstep.</p>
           </v-col>
         </v-row>
       </v-parallax>

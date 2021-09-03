@@ -47,7 +47,7 @@
 
             <div class="my-4 text-subtitle-1">
               <strong>Price</strong>
-              <p>${{ fruit_data.price }}</p>
+              <p>{{fruit_data.product_url}}</p>
             </div>
           </v-card-text>
 
